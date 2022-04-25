@@ -1,0 +1,152 @@
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnLeft {
+    width: 30%;
+    float: left;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    height: 700px;
+    overflow: auto;
+    background-color: gainsboro;
+    margin-right: 5px;
+}
+
+.columnRight {
+    width: 69%;
+    float: left;
+    border: 1px solid blueviolet;
+    border-radius: 0px 20px 20px 0px;
+    background-color: gainsboro;
+    height: 700px;
+}
+.orderBlock {
+    margin:4% ;
+    width: 90%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.orderBlock:hover {
+    border-color: blue;
+    -webkit-box-shadow: 0 0 8px yellowgreen;
+    box-shadow:  0 0 8px yellowgreen;
+}
+.rightTop {
+    margin: 2%;
+    width: 96%;
+    height: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.rightBottom {
+    margin: 2%;
+    width: 96%;
+    height: 65%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.dayBox{
+    margin: 1%;
+    width: 14%;
+    height: 76%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    float: left;
+    background-color: ghostwhite;
+}
+
+.dayBox:hover{
+    border-color: blue;
+    -webkit-box-shadow: 0 0 8px yellowgreen;
+    box-shadow:  0 0 8px yellowgreen;
+}
+
+.changeDay{
+    margin: 1%;
+    width: 4%;
+    height: 78%;
+    
+    float: left;
+}
+
+.activityBox{
+    margin: 2%;
+    width: 28.5%;
+    height: 75%;
+    border: 1px solid black;
+    float: left;
+}
+
+.orderInfor {
+    width: 60%; float: left; margin-left: 10px;
+}
+
+.arrowBox {
+   height:80% ; float: left; padding-top: 15px; padding-left: 5%; 
+}
+
+.changedayArrowImg {
+    width: 25px; display: block; padding-top: 15px;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 3px;
+    width: 30%;
+}
+label {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: 3px;
+    padding-left: 8px;
+    width: 50%;
+    display: inline-block;
+}
+
+.orderDetailPetImg {
+    width: 65%;
+    margin: 10px;
+    padding-left: 2em;
+}
+.orderArrowImg {
+    width: 20px; 
+}
+
+.dayNumber {
+    padding-left:35% ; margin-bottom: 0; font-weight: bold;
+}
+
+.dayInfor{
+    font-size: 50%; margin: 0;  padding-left:35%;
+}
+
+.seeMoreImg {
+    width: 100px;
+}
+
+#promptStat {
+    text-align: center;
+}
+
+#requestMoreLink {
+    float: right; padding-right: 10%; margin-top: 3%;
+}
+
+#makeSomeChangeAndCancelButton{
+    float: left;margin-right: 10%; margin-top: 4%; border-radius: 10px;height: 30px;
+}
+
+#footerBox {
+    margin: 2em; text-align: center;
+}
+.backGround {
+    background-image:url(../image/background.jpg);
+}
