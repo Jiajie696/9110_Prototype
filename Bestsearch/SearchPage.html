@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchPage</title>
+    <link rel="stylesheet" href="css/SearchPage.css">
+    
+</head>
+<body>
+        <!-- nav  star -->
+        <div style="background: #d1d2d4;box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);">
+            <div class="nav">
+                <div id="logo"> <a href=""> <img src="img/websiteLogo.png" height="50px"> </a></div>
+                <ul id="menu">
+                    <li><a href="#">Lanuage</a> 
+                    </li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="SearchPage.html">Search</a></li>
+                    <li><a href="#">Customer serivce</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav  end -->
+
+        <div style="clear: both;padding: 10px;"></div>
+
+        <!-- banner  star -->
+        <div id="banner">
+            <img src="img/dog2.jpg" id="pic">
+            <div id="tab">
+                <button class="tab active" onclick="openTab(event, 'tab-1')">
+                    <a href="#" class="tab-n" id="one">
+                        <img src="img/boarding.png">
+                        <p>Pet Boarding</p>
+                    </a>
+                </button>
+                <button class="tab active" onclick="openTab(event, 'tab-2')">
+                    <a href="#" class="tab" id="one">
+                        <img src="img/宠物睡窝.png">
+                        <p>Pet Leisure</p>
+                    </a>
+                </button>
+                <button class="tab active" onclick="openTab(event, 'tab-3')">
+                    <a href="#" class="tab" id="one">
+                        <img src="img/宠物美容.png">
+                        <p>Pet Grooming</p> 
+                    </a>
+                </button>
+                <button class="tab active" onclick="openTab(event, 'tab-4')">
+                    <a href="#" class="tab" id="one">
+                        <img src="img/遛狗.png">
+                        <p>More...</p> 
+                    </a>
+                </button>
+            </div>
+            <div id="searchBox" style="width: 600px;height: 40px;display: flex;margin: 20px auto; border-radius: 10px; background: rgba(255, 255, 255, 0.5);border: 1px solid #d1d2d4;">
+                <input type="text" placeholder="Please enter keywords..." >
+                <a>search</a>
+            </div>
+        </div>
+        <!-- banner  end -->
+
+        <div style="clear: both;"></div>
+
+        <!-- Results  star -->
+
+        <div class="Results">
+            <div class="content">
+              <div class="content__inner" id="tab-1">
+                <div class="page">
+                    <h1>Dog Boarding </h1> 
+                    <h4><a href="Roomdetail1.html">More Room detail</a> </h4> 
+                    <hr/>
+                  <ul>
+                      <li>
+                          <img src="img/dog1.jpeg">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲66</span><span style="text-decoration:line-through;font-size: 12px;">💲98</span>
+                            <p> 
+                              <b>Economic type: </b>
+                              The semi open design allows the dog to see the surrounding environment and increase air circulation.. </p>
+                          </div>
+                      </li>
+                      <li>
+                        <img src="img/dog2.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲128</span><span style="text-decoration:line-through;font-size: 12px;">💲198</span>
+                          <p>
+                            <b>Ins style room: </b>
+                            Have independent space, and the room style is beautiful and stylish.
+                          </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/dog3.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲166</span><span style="text-decoration:line-through;font-size: 12px;">💲256</span>
+                          <p> <b>VIP room: </b>
+                            It has a large independent space and provides cooling / heating equipment, with plenty of sunshine.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/cat2.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲48</span><span style="text-decoration:line-through;font-size: 12px;">💲88</span>
+                          <p> <b>Economic type: </b> 
+                            Simple style decoration, clean and sanitary.
+                          </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/cat1.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲78</span><span style="text-decoration:line-through;font-size: 12px;">💲119</span>
+                          <p> <b>Ins style room: </b>
+                            Large activity space and stronger air circulation.
+                          </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/cat3.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">￥120</span><span style="text-decoration:line-through;font-size: 12px;">￥168</span>
+                          <p> <b>VIP room: </b>
+                            The space is more quiet, comfortable and sunny.
+                          </p>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content__inner" id="tab-2">
+                <div class="page">
+                    <ul>
+                      <h1>Pet Leisure</h1>
+                      <hr/>
+                      <li>
+                          <img src="img/pl1.jpeg">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲89</span><span style="text-decoration:line-through;font-size: 12px;">💲150</span>
+                            <p> <b>Dog walking </b></p>
+                          </div>
+                      </li>
+                      <li>
+                        <img src="img/pl2.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲89</span><span style="text-decoration:line-through;font-size: 12px;">💲150</span>
+                          <p> <b> Dog swimming </b></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/pl3.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲89</span><span style="text-decoration:line-through;font-size: 12px;">💲150</span>
+                          <p> <b> Frisbee training</b></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/pl4.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲89</span><span style="text-decoration:line-through;font-size: 12px;">💲150</span>
+                          <p>  <b>Drill ring training</b></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/pl5.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲89</span><span style="text-decoration:line-through;font-size: 12px;">💲150</span>
+                          <p> <b> Emotional control</b></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/gr6.jpeg">
+                        <div id="jg">
+                          <span style="font-size: 20px;font-weight: bold;color: ref;">💲89</span><span style="text-decoration:line-through;font-size: 12px;">💲150</span>
+                          <p> <b>Best package </b>please contact the merchant for details </p>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="content__inner" id="tab-3">
+                <div class="page">
+                    <ul>
+                        <h1>Pet Grooming</h1>
+                        <hr/>
+                        <li>
+                            <img src="img/gr1.jpeg">
+                            <div id="jg">
+                              <span style="font-size: 20px;font-weight: bold;color: ref;">💲33</span><span style="text-decoration:line-through;font-size: 12px;">💲68</span>
+                              <p> <b>Pet haircut： </b> Design perfect hairstyle for pets, and support scalding and dyeing without damaging hair. </p>
+                            </div>
+                        </li>
+                        <li>
+                          <img src="img/gr2.jpeg">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲66</span><span style="text-decoration:line-through;font-size: 12px;">💲120</span>
+                            <p> <b>Pet bath： </b>Regular cleaning can prevent insects from appearing on pets.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/gr3.jpeg">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲48</span><span style="text-decoration:line-through;font-size: 12px;">💲88</span>
+                            <p> <b>Pet oral care： </b> Proper oral care can clean up the food in the mouth and avoid the breeding of bacteria.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/gr4.jpeg">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲88</span><span style="text-decoration:line-through;font-size: 12px;">💲149</span>
+                            <p> <b>Pet Beauty： </b> Design different beauty needs for your little pet to make your pet more fashionable
+
+                            </p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/gr5.png">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲59</span><span style="text-decoration:line-through;font-size: 12px;">💲99</span>
+                            <p> <b>Pet massage： </b> Pet massage can help dilate blood vessels, improve blood circulation, and drive more oxygen and nutrition to follow the blood flow.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/gr6.jpeg">
+                          <div id="jg">
+                            <span style="font-size: 20px;font-weight: bold;color: ref;">💲500</span><span style="text-decoration:line-through;font-size: 12px;">💲900</span>
+                            <p> <b>Best package： </b> You can save a lot of money by applying for a recharge card with more discounts.</p>
+                          </div>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="content__inner" id="tab-4">
+                <div class="page">
+                    <ul>
+                        <h1>More</h1>
+                        <hr/>
+                        <li>
+                            <img src="img/m1.jpeg">
+                            <p> <h1><b>Pet day care</b> </h1>  </p>
+                        </li>
+                        <li>
+                          <img src="img/m2.jpeg">
+                          <div id="jg">
+                            <p> <h1><b>Pet sitting</b> </h1>  </p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/m3.jpeg">
+                          <div id="jg">
+                            <p> <h1><b>Pet photography</b> </h1>  </p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/m4.jpeg">
+                          <div id="jg">
+                            <p> <h1><b>Pet Taxi</b> </h1>  </p>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/m5.jpeg">
+                          <div id="jg">
+                            <p> <h1><b>veterinary</b> </h1>  </p>
+                          </div>
+                      </li>
+                      
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script src="js/script.js"></script>
+
+        <!-- Results  end -->
+
+        <div style="clear: both;padding: 20px;"></div>
+
+        <!-- footer  star -->
+        <div class="footer">
+            <div id="bottom">
+                <div class="lj">
+                    <a href="#">Englich</a>
+                    |
+                    <a href="#">About us</a>
+                    |
+                    <a href="#">Search</a>
+                    |
+                    <a href="#">Customer serivce</a>
+                    |
+                    <a href="#">Login</a>
+                </div>
+                <p>@Copyright 2002 BestMate Icn. All Rights Reserved | USYD</p>
+            </div>
+        </div>
+        <!-- footer  end -->
+
+
+
+
+        <script>
+
+        </script>
+</body>
+</html>
