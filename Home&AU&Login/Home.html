@@ -50,10 +50,48 @@ margin-top: 20px;
 margin-left: 130px;
 border-radius:90px;
 }
+	.ant-btn {
+    line-height: 1.499;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(0,0,0,0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+}
+
+
+.ant-btn-red {
+    margin-left: 60px;
+    color: #fff;
+    background-color: #B0C4DE;
+    border-color: #B0C4DE;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+}
 </style>
 </head>
 <body>
- <!--导航栏-->
     <div id="top" style="margin: 2em 10em 2em 10em;">
         <div id="" style="padding: 5px; margin: 2em; ">
             <a href=""><img src="HomePageImage/websiteLogo.png" alt="" style="width: 50px;"></a>
@@ -66,14 +104,17 @@ border-radius:90px;
             </nav>
         </div>
 </div>
- <!--欢迎-->
+
 <div id="welcome-l"></div>
 <div id="welcome-r"></div>
 
- <!--优质房间推荐-->
+
 <div id="main">
 <center>
-<h1>°★ &nbsp&nbspP O P U L A R &nbsp&nbsp&nbsp&nbsp&nbsp&nbspR O O M &nbsp&nbsp★°</h1>
+<h1>°★ &nbsp&nbspP O P U L A R &nbsp&nbsp&nbsp&nbsp&nbsp&nbspR O O M &nbsp&nbsp★°
+	<a href="customerService_personalCenter_orderAndFeedback/SearchPage.html">
+	<input id=reg type="submit" value="More" class="ant-btn ant-btn-red"/></a>
+	</h1>
 </center>
 <div class="R" style="float:left;margin-top: 20px;margin-right: 0px;margin-bottom: 20px;margin-left: 30px;">
 <center>
