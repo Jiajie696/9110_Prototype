@@ -1,93 +1,102 @@
-        /* 创建三个相等的列 */
-        .columnLeft {
-            float: left;
-            width: 35%;
-        }
-        .columnMid {
-            float: left;
-            width: 20%;
-        }
-        .columnRight {
-            float: left;
-            width: 45%;
-        }
+/* 创建三个相等的列 */
+.columnLeft {
+    float: left;
+    width: 35%;
+}
+.columnMid {
+    float: left;
+    width: 20%;
+}
+.columnRight {
+    float: left;
+    width: 45%;
+}
+
+/* 列后清除浮动 */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.petTrash {
+    visibility:visible;
+}
+
+.petTrash:hover {
+    visibility: visible;
+}
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 2px;
+    
+}
+input:focus{
+    border-color: blue;
+    -webkit-box-shadow: 0 0 8px yellowgreen;
+    box-shadow:  0 0 8px yellowgreen;
+}
+.detailsTable {
+    border: 1px; 
+    border-color: aqua;
+    border-style: dashed; 
+    border-radius: 20px; 
+    padding: 20px; 
+    margin: 2em; 
+    background-color:gainsboro;
+}
+.backGround {
+    background-image:url(../image/background.jpg);
+    padding: 0px;
+    margin: 0px;
+}
+.overRallContainer {
+    margin: 2em 10em 2em 10em;
+}
+.webLogo {
+    width: 50px;
+}
+.navigationContainer {
+    padding: 5px; margin: 2em;
+}
+.navigationLink {
+    display:inline-block; padding: 5px;
+}
+.faceImgContainer {
+    width:8%; height: 100px; float: left; background-color: rgb(248, 253, 255);
+}
+.faceImg {
+    width: 100%; height: 100%; display: inline-block;
+}
+.personDetailsLabel {
+    display: inline-block; width: 100px;
+}
+.petsOptions{
+    width: 65%; border-bottom: 1px solid yellowgreen;
+}
+.petsLinks{
+    display: inline-block; width: 50%;
+}
+.petsImg{
+    width: 30%; float: left; padding-top: 80px;
+}
+.petsDetails{
+    width: 50%; float: left;
+}
+.petsDetailsLabel{
+    display: inline-block; width: 30%;
+}
+#Gender {
+    width: 50%; border: 1px  solid black; border-radius: 5px;
+}
+#footerBox {
+    margin: 2em; text-align: center;
+}
+.nav{width: 100%;height: 60px;margin: 0px;padding: 0px;}
+.nav #logo{width: 200px;height: 60px;float: left; text-align: center;line-height: 60px;font-size: 30px;}
+.nav #menu{float: right;list-style: none;padding: 0px;margin: 0px;}
+.nav #menu li{float: left;}
+.nav #menu li a{display: block;padding:0px 20px; height: 60px;line-height: 60px;text-align: center;text-decoration: none;}
+.nav #menu li a:hover{color: #fff;}
         
-        /* 列后清除浮动 */
-        .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-
-        .petTrash {
-            visibility:visible;
-        }
-
-        .petTrash:hover {
-            visibility: visible;
-        }
-        input {
-            border-radius: 5px;
-            border: 1px solid black;
-            margin-right: 2px;
-            
-        }
-        input:focus{
-            border-color: blue;
-            -webkit-box-shadow: 0 0 8px yellowgreen;
-            box-shadow:  0 0 8px yellowgreen;
-        }
-        .detailsTable {
-            border: 1px; 
-            border-color: aqua;
-            border-style: dashed; 
-            border-radius: 20px; 
-            padding: 20px; 
-            margin: 2em; 
-            background-color:gainsboro;
-        }
-        .backGround {
-            background-image:url(../image/background.jpg);
-        }
-        .overRallContainer {
-            margin: 2em 10em 2em 10em;
-        }
-        .webLogo {
-            width: 50px;
-        }
-        .navigationContainer {
-            padding: 5px; margin: 2em;
-        }
-        .navigationLink {
-            display:inline-block; padding: 5px;
-        }
-        .faceImgContainer {
-            width:8%; height: 100px; float: left; background-color: rgb(248, 253, 255);
-        }
-        .faceImg {
-            width: 100%; height: 100%; display: inline-block;
-        }
-        .personDetailsLabel {
-            display: inline-block; width: 100px;
-        }
-        .petsOptions{
-            width: 65%; border-bottom: 1px solid yellowgreen;
-        }
-        .petsLinks{
-            display: inline-block; width: 50%;
-        }
-        .petsImg{
-            width: 30%; float: left; padding-top: 80px;
-        }
-        .petsDetails{
-            width: 50%; float: left;
-        }
-        .petsDetailsLabel{
-            display: inline-block; width: 30%;
-        }
-        #Gender {
-            width: 50%; border: 1px  solid black; border-radius: 5px;
-        }
-        #footerBox {
-            margin: 2em; text-align: center;
-        }

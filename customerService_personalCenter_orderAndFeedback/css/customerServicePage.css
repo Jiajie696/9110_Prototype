@@ -141,6 +141,8 @@ input:focus{
 }
 .backGroud {
     background-image:url(../image/background.jpg);
+    padding: 0px;
+    margin: 0px;
 }
 .overRallContainer {
     margin: 2em 10em 2em 10em;
@@ -151,3 +153,10 @@ input:focus{
 .navLinks {
     display:inline-block; padding: 5px;
 }
+
+.nav{width: 100%;height: 60px;margin: 0px;padding: 0px;}
+.nav #logo{width: 200px;height: 60px;float: left; text-align: center;line-height: 60px;font-size: 30px;}
+.nav #menu{float: right;list-style: none;padding: 0px;margin: 0px;}
+.nav #menu li{float: left;}
+.nav #menu li a{display: block;padding:0px 20px; height: 60px;line-height: 60px;text-align: center;text-decoration: none;}
+.nav #menu li a:hover{color: #fff;}
