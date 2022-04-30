@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02</title>
     <link rel="stylesheet" href="css/Roomdetail.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- nav  star -->
     <div style="background: #d1d2d4;box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);">
         <div class="nav">
-            <div id="logo"> <a href=""> <img src="img/websiteLogo.png" height="50px"></a></div>
+            <div id="logo"> <a href="../Home&AU&Login/Home.html"> <img src="img/websiteLogo.png" height="50px"></a></div>
             <ul id="menu">
+                <li><a href="../Home&AU&Login/Home.html">Home</a> </li>
                 <li><a href="#">Language</a> </li>
-                    <li><a href="../Home&AU&Login/About us.html">About us</a></li>
-                    <li><a href="../customerService_personalCenter_orderAndFeedback/personalCenterPage.html"> Personal Center</a></li>
-                    <li><a href="SearchPage.html">Search</a></li>
-                    <li><a href="../customerService_personalCenter_orderAndFeedback/customerServicePage.html">Customer serivce</a></li>
-                    <li><a href="#">Logout</a></li>
+                <li><a href="../Home&AU&Login/About us.html">About us</a></li>
+                <li><a href="../customerService_personalCenter_orderAndFeedback/personalCenterPage.html"> Personal Center</a></li>
+                <li><a href="SearchPage.html">Search</a></li>
+                <li><a href="../customerService_personalCenter_orderAndFeedback/customerServicePage.html">Customer serivce</a></li>
+                <li><a href="../customerService_personalCenter_orderAndFeedback/orderAndFeedbackPage.html"> order</a></li>
+                <li><a href="../Home&AU&Login/HomeNOLOGIN.html">Logout</a></li>
             </ul>
         </div>
     </div>
@@ -30,7 +33,7 @@
         <div class="lt">
             <div class="list">
                 <div id="tx"><img src="img/tx3.png"><span>Tom</span></div>
-                <p>This ins style room is perfect for taking pictures of pets. I love it.</p>
+                <p>This ins style room is perfect for taking pictures of pets.I love it.</p>
             </div>
             <div class="list">
                 <div id="tx"><img src="img/tx4.png"><span>Jerry</span></div>
@@ -38,7 +41,7 @@
             </div>
             <div class="list">
                 <div id="tx"><img src="img/tx2.png"><span>May</span></div>
-                <p>My cat is not willing to leave. <br> The environment is really good. There is plenty of cat litter and cat food!</p>
+                <p>My cat is not willing to leave. <br> The environment is really good. There is plenty of cat litter and cat <br> food!</p>
             </div>
             <div class="list">
                 <div id="tx"><img src="img/tx5.png"><span>Lisa</span></div>
@@ -47,26 +50,43 @@
             </div>
             <div class="list">
                 <div id="tx"><img src="img/tx.png"><span>Dylon</span></div>
-                <p>It's a great experience. I'll bring <br> the dog again next time.</p>
+                <p>It's a great experience.I'll bring the dog again next time.</p>
             </div>
             <div class="list">
                 <div id="tx"><img src="img/tx1.png"><span>Ella</span></div>
-                <p>The facilities are complete and <br> clean, and there are many different <br> room types to choose from. It really <br> gives the dog a good experience. I <br> hope I will have a chance to come <br> back in the future.</p>
+                <p>The facilities are complete and clean, and there are many different room types to choose from. It really gives the dog a good experience.I hope I will have a chance to come back in the future.</p>
             </div>
             </div>
         <div class="rt">
             <div style="display: flex;">
-                <ul>
-                    <li><a href="Roomdetail1.html">Economic room</a></li>
-                        <li><a href="Roomdetail2.html">Sunshine glass</a></li>
-                        <li><a href="Roomdetail3.html">Ins style room</a></li>
-                        <li><a href="Roomdetail4.html">VIP room</a></li>
-                </ul>
+                <div class="box" id="box" >
+                    <ul>
+                        <li class="active"><a href="#"><img src="img/i1.jpeg"/></a></li>
+                        <li><a href="#"><img src="img/i2.jpeg"/></a></li>
+                        <li><a href="#"><img src="img/i3.jpeg"/></a></li>
+                        <li><a href="#"><img src="img/i4.jpeg"/></a></li>
+                    </ul>
+                    <div id="left"> < </div>
+                    <div id="right"> > </div>
+                    <div class="icons" id="icons">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
                 <div class="left" >
                     <p>Area:</p>&nbsp;&nbsp;<span>medium</span><br />
                     <p>Price:</p>&nbsp;&nbsp;<span>moderate</span><br />
                     <p>Comfort:</p><span>Medium level</span>
                 </div>
+            </div>
+            <div class="Roomdetail">
+                <a href="Roomdetail1.html">Economic room</a>
+                <a href="Roomdetail2.html">Sunshine glass</a>
+                <a href="Roomdetail3.html">Ins style room</a>
+                <a href="Roomdetail4.html">VIP room</a>
             </div>
             <div class="present">
                 <div style="width: 800px;margin: auto;">
@@ -90,3 +110,52 @@
     <!-- content  end -->
 </body>
 </html>
+<script>
+    window.onload = function(){
+        // 获取上一页，获取上一页
+        var oLeft = document.getElementById("left");
+        var oRght = document.getElementById("right");
+        var oBox = document.getElementById("box");
+        // 获取li
+        var oLis = document.getElementById("box").getElementsByTagName("li");
+        var oSpans = document.getElementById("icons").getElementsByTagName("span");
+        var index = 0;
+        var timer = null;
+        
+        timer = setInterval(function(){
+            oRght.onclick();
+        },9999);
+        //鼠标放上去
+        oBox.onmousemove = function(){
+            // 清除定时器
+            clearInterval(timer);
+        }
+        //鼠标移开
+        oBox.onmouseout = function(){
+            timer = setInterval(function(){
+            oRght.onclick();
+            },9999);
+        }
+        // 点击下一页
+        oRght.onclick = function(){
+            oLis[index].className = "";
+            index++;
+            if(index > oLis.length - 1){
+                index = 0;
+            }
+            oLis[index].className = "active";
+            oSpans[index].className = "active";
+        }
+        oLeft.onclick = function(){
+            oLis[index].className = "";
+            index--;
+            if(index < 0) {
+                index = oLis.length - 1;
+            }
+            oLis[index].className = "active";
+            oSpans[index].className = "active";
+        }
+        
+        
+    }
+</script>s

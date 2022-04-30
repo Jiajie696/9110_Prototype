@@ -20,10 +20,10 @@ body{height: 100vh;overflow: hidden;}
 .content .lt .list p{margin-top: 10px;font-size: 14px;text-indent: 2em;}
 
 .content .rt{width: 860px;margin-left: 30px;}
-.content .rt  ul{width: 700px;height: 250px;min-height: 200px; background: url("../img/dog2.jpg") no-repeat;background-size: 700px;}
-.content .rt  ul li{float: left;margin-left: 20px; margin-top: 220px;}
-.content .rt  ul li a{display: block; width: 130px;height: 30px; background: rgba(0, 0, 0, 0.2);text-align: center;line-height: 30px;color: #000;}
-.content .rt  ul li a:hover{background: rgba(255, 255, 255, 0.2);color: #fff;}
+.content .rt ul{width: 600px;height: 250px;min-height: 200px;background-size: 700px;}
+/* .content .rt  ul li{float: left;margin-left: 20px; margin-top: 220px;} */
+/* .content .rt  ul li a{display: block; width: 130px;height: 30px; background: rgba(0, 0, 0, 0.2);text-align: center;line-height: 30px;color: #000;}
+.content .rt  ul li a:hover{background: rgba(255, 255, 255, 0.2);color: #fff;} */
 .content .rt .left{width: 240px;height: 200px; padding: 20px 20px;box-sizing: border-box;}
 /*.content .rt .left .ul .star{list-style: none; width: 20px; height: 20px; background-image: url("../img/star1.png"); background-repeat: no-repeat; float: left;}
 /*在当前li被选中为锚点时触发*/
@@ -31,12 +31,17 @@ body{height: 100vh;overflow: hidden;}
 .content .rt .left p{display: inline;line-height: 40px; font-size: 20px;font-weight: bold;}
 .content .rt .left span{clear: both;}
 
+.Roomdetail{width: 80%;margin: 10px auto; display: flex;justify-content: space-between;}
+.Roomdetail a{display: block;width: 150px;height: 30px;text-align: center;line-height: 30px;background: rgba(0, 0, 0, 0.2);color: #fff;}
+.Roomdetail a:hover{background: rgba(255, 255, 255, 0.2);color: rgba(0, 0, 0, 0.8);}
+
+
 .content .rt .present{width: 840px;height: 280px; overflow: auto; vertical-align: middle; word-break: break-all;}
 .content .rt .present::-webkit-scrollbar {width: 8px;height: 1px;}
 .content .rt .present::-webkit-scrollbar-thumb {border-radius: 10px;background: #888888;}
 .content .rt .present::-webkit-scrollbar-track {border-radius: 10px;background: #EDEDED;}
 /*.content .rt .present h3{text-align: center;margin: 20px 0;} */
-.content .rt .present p{width: 800px; margin-top: 20px;}
+.content .rt .present p{width: 800px; margin-top: 10px;}
 .content .rt .present .button{display: flex;justify-content: space-around;}
 .content .rt .present button{list-style: none;outline: none;margin-top: 30px;border: none;width: 100px;height: 30px;border-radius: 15px;border: 1px solid gray;}
 .content .rt .present button:hover{background: pink;}

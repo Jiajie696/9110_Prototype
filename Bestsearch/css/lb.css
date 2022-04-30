@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ 
+div {
+    width: calc(100%);
+    overflow: hidden;
+}
+ 
+div ul {
+    width: calc(100% * 4);
+    animation-name: am;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+ 
+div ul li {
+    width: calc(100% / 4);
+    height: 500px;
+    float: left;
+    list-style: none;
+}
+ 
+div ul li:nth-child(1)
+{
+    background-image: url(../img/1.jpg);
+}
+ 
+div ul li:nth-child(2)
+{
+    background-image: url(../img/cat2.jpeg);
+}
+ 
+div ul li:nth-child(3)
+{
+    background-image: url(../img/21-宠物.png);
+}
+ 
+div ul li:nth-child(4)
+{
+    background-image: url(../img/dog1.jpg);
+}
+ 
+@keyframes am {
+    0%, 15% {margin-left: 0;}
+    25%, 40% {margin-left: calc(100% * -1);}
+    50%, 65% {margin-left: calc(200% * -1);}
+    80%, 100% {margin-left: calc(300% * -1);}
+}

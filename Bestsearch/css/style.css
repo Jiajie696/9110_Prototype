@@ -1,0 +1,60 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+.box{
+
+	
+	position: relative;
+}
+.box ul li a{
+	display: block;
+	width: 600px;
+} 
+.box ul li a img{
+	width: 100%;
+	height: 250px;
+}
+.box ul li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#left,#right{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	padding:12px;
+	color: white;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#left{
+	left: 0px;
+}
+#right{
+	right: 0px;
+}
+.icons{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10px;
+}
+/* .icons span{
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "微软雅黑";
+} */
+.box ul .active{
+	display: block;
+}
+.icons .active{
+	background-color: rgba(255,255,255,0.5);
+}
