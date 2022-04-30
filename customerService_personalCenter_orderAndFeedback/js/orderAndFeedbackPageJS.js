@@ -18,18 +18,23 @@ function lockOrderAndFeedbackInput() {
 }
 
 function hiddenTasksDetails() {
+    let taskDetailsDay = document.getElementById("dayBoxId");
     let taskDetailsObj = document.getElementById("tasksDetails");
+    taskDetailsDay.style.display = "none"
     taskDetailsObj.style.display = "none";
 }
 
 function clickOrderReaction() {
+    let taskDetailsDay = document.getElementById("dayBoxId");
     let taskDetailsObj = document.getElementById("tasksDetails"); 
     let promptStatObj = document.getElementById("promptStat");
     if(taskDetailsTrigger){
+        taskDetailsDay.style.display = "none"
         taskDetailsObj.style.display = "none";
         taskDetailsTrigger = false;
         promptStatObj.style.display = "";
     }else{
+        taskDetailsDay.style.display = ""
         taskDetailsObj.style.display = "";
         taskDetailsTrigger = true;
         promptStatObj.style.display = "none";
